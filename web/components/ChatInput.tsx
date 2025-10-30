@@ -11,7 +11,7 @@ export const ChatInput = ({
 }) => (
   <form onSubmit={onSubmit}>
     <input
-      className={`fixed bottom-0 w-full max-w-2xl p-2 mb-8 border-2 border-zinc-300 rounded shadow-xl bg-gray-50 ${
+      className={`fixed bottom-0 w-full max-w-3xl p-2 mb-8 border-2 border-gray-100 rounded shadow bg-gray-50 ${
         disabled ? 'opacity-50 cursor-not-allowed' : ''
       }`}
       value={input}
