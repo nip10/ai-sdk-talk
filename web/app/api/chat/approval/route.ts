@@ -40,6 +40,8 @@ const tools = {
       balance: z.number().describe('The balance of the bank account'),
       accountId: z.string().describe('The id of the bank account'),
     }),
+    needsApproval: true,
+    //needsApproval: async ({ quantity, unitPrice }) => quantity * unitPrice > 1000,
     execute: async ({ symbol, quantity, unitPrice, balance, accountId }) => {
       if (balance < quantity * unitPrice) {
         throw new Error('Insufficient balance');
