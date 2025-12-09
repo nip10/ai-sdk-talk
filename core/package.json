@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "tsx",
-    "run": "tsx run.ts"
+    "start": "tsx run.ts"
   },
   "keywords": [],
   "author": "",
