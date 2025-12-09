@@ -5,7 +5,7 @@ const client = new OpenAI();
 
 const stream = await client.responses.create({
   model: 'gpt-4o',
-  input: `Write the first entry in an explorer's journal on an uncharted island`,
+  input: `Write the first paragraph of an entry in an explorer's journal on an uncharted island`,
   stream: true,
 });
 
